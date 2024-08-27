@@ -1,0 +1,563 @@
+.section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        #vanta-bg-home,
+        #vanta-bg-events,
+        #vanta-bg-gallery {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .text h1 {
+            --font-color: #323232;
+            --bg-color: #fff;
+            --main-color: #404040;
+            font-size: 280px;
+            line-height: 100px;
+            z-index: 1;
+            color: #ffff;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-shadow: 6px 6px var(--main-color);
+            opacity: 1;
+        }
+
+        .text p {
+            font-size: 40px;
+            line-height: 150px;
+            z-index: 1;
+            color: #ffff;
+            position: absolute;
+            top: 57%;
+            left: 28.5%;
+            transform: translate(-50%, -50%);
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            opacity: 1;
+        }
+
+        /* From Uiverse.io by andrew-demchenk0 */
+        .button {
+            position: absolute;
+            top: 68%;
+            left: 7%;
+            z-index: 1;
+            --font-color: #323232;
+            --bg-color: #fff;
+            --main-color: #404040;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            border: 2px solid var(--main-color);
+            background-color: var(--bg-color);
+            box-shadow: 4px 4px var(--main-color);
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--font-color);
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .button:active {
+            box-shadow: 0px 0px var(--main-color);
+            transform: translate(3px, 3px);
+        }
+
+        .button a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header * {
+            display: inline;
+            top: 5%;
+            color: #ffff;
+            z-index: 1;
+            opacity: 1;
+        }
+
+        .header nav {
+            z-index: 1;
+            position: absolute;
+            left: 55%;
+            font-family: "Jersey 10", sans-serif;
+            font-style: normal;
+            font-size: 25px;
+            z-index: 1;
+        }
+
+        .header li {
+            margin: 30px;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+
+        .header a:active {
+            transform: translateX(4px);
+            /* Horizontal push effect */
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+            color: #9b9b9b;
+        }
+
+        .text2 h1 {
+
+            --font-color: #323232;
+            --bg-color: #fff;
+            --main-color: #404040;
+            opacity: 1;
+            font-size: 240px;
+            line-height: 100px;
+            z-index: 1;
+            color: #ffff;
+            position: absolute;
+            top: 3%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-shadow: 6px 6px var(--main-color);
+
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            /* Add some space between the cards */
+            padding: 20px;
+            margin-top: 17%;
+            /* Add padding around the container */
+            opacity: 1;
+        }
+
+        .card img,
+        .card1 img,
+        .card2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure the image covers the entire card */
+            position: absolute;
+            /* Position the image absolutely */
+            top: 0;
+            left: 0;
+            z-index: 0;
+            /* Place the image behind other content */
+            opacity: 0.3;
+            z-index: 3;
+            /* Adjust transparency if you want to see the content more clearly */
+        }
+
+        .card,
+        .card1,
+        .card2 {
+            width: 300px;
+            /* Adjust the width as needed */
+            padding: 20px;
+            background: #000000;
+            box-shadow: 6px 6px 0 #404040;
+            transition: transform 0.3s, box-shadow 0.3s;
+            z-index: 3;
+            /* Ensure it's on top */
+            font-family: "Readex Pro", sans-serif;
+            position: relative;
+            opacity: 1;
+        }
+
+        .card:hover,
+        .card1:hover,
+        .card2:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 12px 12px 0 #404040;
+        }
+
+        .card__title,
+        .card1__title,
+        .card2__title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            z-index: 4;
+        }
+
+
+        .card__title::after,
+        .card1__title::after,
+        .card2__title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 90%;
+            height: 3px;
+            background-color: #ffffff;
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card__title::after,
+        .card1:hover .card__title::after,
+        .card2:hover .card__title::after {
+            transform: translateX(0);
+        }
+
+        .card__content,
+        .card1__content,
+        .card2__content {
+            z-index: 10;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-family: "Readex Pro", sans-serif;
+            /* Consistent font */
+        }
+
+
+        .card__form,
+        .card1__form,
+        .card2__form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 5;
+        }
+
+        .card__form input,
+        .card1__form input,
+        .card2__form input {
+            padding: 10px;
+            border: 3px solid #ffffff;
+            font-size: 16px;
+            transition: transform 0.3s;
+            width: calc(100% - 26px);
+            z-index: 5;
+        }
+
+        .card__form input:focus,
+        .card1__form input:focus,
+        .card2__form input:focus {
+            outline: none;
+            transform: scale(1.05);
+            background-color: #5f5f5f;
+            color: #ffffff;
+        }
+
+        .card__button,
+        .card1__button,
+        .card2__button {
+            border: 3px solid #2e2e2e;
+            background: #404040;
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 50%;
+            height: 100%;
+            font-family: "Readex Pro", sans-serif;
+            /* Consistent font */
+            z-index: 4;
+            /* Ensure it's on top */
+        }
+
+        .card__button::before,
+        .card1__button::before,
+        .card2__button::before {
+            content: "Sure?";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 105%;
+            background-color: #a241d6;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .card__button:hover::before,
+        .card1__button:hover::before,
+        .card2__button:hover::before {
+            transform: translateY(0);
+        }
+
+        .card__button:active,
+        .card1__button:active,
+        .card2__button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(2px, 2px);
+            }
+
+            25% {
+                transform: translate(-2px, -2px);
+            }
+
+            50% {
+                transform: translate(-2px, 2px);
+            }
+
+            75% {
+                transform: translate(2px, -2px);
+            }
+
+            100% {
+                transform: translate(2px, 2px);
+            }
+        }
+
+        .glitch {
+            animation: glitch 0.3s infinite;
+        }
+
+        .card0-container {
+            display: flex;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            gap: 20px;
+            scroll-padding-top: 24px;
+            border-radius: 8px;
+            margin-top: 20%;
+            margin-left: 2%;
+            display: flex;
+            overflow-x: scroll;
+            overflow-wrap: anywhere;
+            padding: 24px;
+            width: 100%;
+            scroll-snap-type: x mandatory;
+            scroll-padding-top: 24px;
+            border-radius: 8px;
+            gap: 20px;
+            z-index: 2;
+        }
+
+        .card0-container::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            z-index: 5;
+        }
+
+        .card0-container::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            background: #888;
+            z-index: 5;
+        }
+
+        .card0,
+        .card01,
+        .card02,
+        .card03,
+        .card04,
+        .card05,
+        .card06 {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: #242824;
+            padding: 10px;
+            border-radius: 6px;
+            gap: 0.5rem;
+            height: max-content;
+            flex: 0 0 22%;
+            /* Adjust the width so at least 4 cards are visible */
+            min-width: 200px;
+            /* Ensure cards don't get too small */
+        }
+
+        .card0_form img,
+        .card01_form img,
+        .card02_form img,
+        .card03_form img,
+        .card04_form img,
+        .card05_form img,
+        .card06_form img {
+            z-index: 0;
+            position: relative;
+            width: 100%;
+            height: 15em;
+            border-radius: 4px;
+            background-color: #ffffff;
+            transition: 0.2s ease-in-out;
+            overflow: hidden;
+            opacity: 3;
+        }
+
+        .card0_form span,
+        .card01_form span,
+        .card02_form span,
+        .card03_form span,
+        .card04_form span,
+        .card05_form span,
+        .card06_form span {
+            z-index: 1;
+            font-size: 1.2em;
+            position: absolute;
+            inset: 0;
+            padding: 5px 10px;
+            color: #fff;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card0:hover .card0_form span,
+        .card01:hover .card01_form span,
+        .card02:hover .card02_form span,
+        .card03:hover .card03_form span,
+        .card04:hover .card04_form span,
+        .card05:hover .card05_form span,
+        .card06:hover .card06_form span,
+        .card0:hover .card0_data span,
+        .card01:hover .card01_data span,
+        .card02:hover .card02_data span,
+        .card03:hover .card03_data span,
+        .card04:hover .card04_data span,
+        .card05:hover .card05_data span,
+        .card06:hover .card06_data span {
+            opacity: 1;
+        }
+
+        .card0_data,
+        .card01_data,
+        .card02_data,
+        .card03_data,
+        .card04_data,
+        .card05_data,
+        .card06_data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card0_data span,
+        .card01_data span,
+        .card02_data span,
+        .card03_data span,
+        .card04_data span,
+        .card05_data span,
+        .card06_data span {
+            color: #9147ff;
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            transition: 0.2s ease-in-out;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .card0_data span:hover,
+        .card01_data span:hover,
+        .card02_data span:hover,
+        .card03_data span:hover,
+        .card04_data span:hover,
+        .card05_data span:hover,
+        .card06_data span:hover {
+            text-decoration: underline;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .text_m {
+            font-size: 0.9em;
+        }
+
+        .text_s {
+            color: #9147ff;
+            font-size: 0.6em;
+        }
+
+        .cube {
+            width: max-content;
+            height: 10px;
+            transition: all 0.2s;
+            transform-style: preserve-3d;
+        }
+
+        .card0:hover .cube,
+        .card01:hover .cube,
+        .card02:hover .cube,
+        .card03:hover .cube,
+        .card04:hover .cube,
+        .card05:hover .cube,
+        .card06:hover .cube {
+            transform: rotateX(90deg);
+        }
+
+        .side {
+            width: max-content;
+            height: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        .top {
+            transform: rotateX(-90deg) translate3d(0, 0, 0em);
+        }
+
+        .front {
+            transform: translate3d(0, 0, 1em);
+        }
+
+
+
+        .header img {
+            width: 5.5%;
+            z-index: 1;
+            position: absolute;
+            left: 3%;
+            top: 3%;
+        }

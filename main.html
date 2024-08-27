@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>IEEE SIES GST</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Disable horizontal scrolling */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            width: 100%;
+            height: 100%;
+            background-color: #181818;
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="section" id="home">
+
+        <div id="vanta-bg-home"></div>
+        <div class="text">
+            <h1>I E E E</h1>
+            <p>IEEE SIES GST Student body academic year 2024</p>
+        </div>
+        <!-- From Uiverse.io by andrew-demchenk0 -->
+        <button class="button">
+            <a href="#events">Let’s go →</a>
+        </button>
+        <header class="header">
+            <img src="IEEE SIESGST_white.png" alt="alt">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About US</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="section" id="events">
+        <div id="vanta-bg-events"></div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+        </div>
+        <div class="text2">
+            <h1>Events</h1>
+            <p>Explore our upcoming events</p>
+        </div>
+        /* From Uiverse.io by 0xnihilism */
+        <div class="cards-container">
+            <div class="card">
+                <img src="techopedia.jpeg" alt="png">
+                <span class="card__title">Techopedia</span>
+                <p class="card__content">
+                    Get existential crisis delivered straight to your inbox every week.
+                </p>
+                <form class="card__form">
+                    <input required="" type="email" placeholder="Your life" />
+                    <button class="card__button">Register</button>
+                </form>
+            </div>
+            <div class="card1">
+                <img src="epsilon.jpeg" alt="png">
+                <span class="card1__title">Epsilon 1</span>
+                <p class="card__content">
+                    Get existential crisis delivered straight to your inbox every week.
+                </p>
+                <form class="card1__form">
+                    <input required="" type="email" placeholder="Your life" />
+                    <button class="card1__button">Register</button>
+                </form>
+            </div>
+            <div class="card2">
+                <img src="webinar.jpeg" alt="">
+                <span class="card__title">Webiner</span>
+                <p class="card__content">
+                    Get existential crisis delivered straight to your inbox every week.
+                </p>
+                <form class="card__form">
+                    <input required="" type="email" placeholder="Your life" />
+                    <button class="card__button">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="gallery">
+
+        <div id="vanta-bg-gallery"></div>
+        <div class="text2">
+            <h1>Gallery</h1>
+            <p>Explore our upcoming events</p>
+        </div>
+        <div class="card0-container">
+            <!-- First Card -->
+            <div class="card0">
+                <div class="card0_form">
+                    <span>(Topic)</span>
+                    <img src="webinar.jpeg" alt="web">
+                </div>
+                <div class="card0_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="card01">
+                <div class="card01_form">
+                    <span>(Topic)</span>
+                    <img src="epsilon.jpeg" alt="epsilon">
+                </div>
+                <div class="card01_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="card02">
+                <div class="card02_form">
+                    <img src="webinar.jpeg" alt="web">
+                    <span>(Topic)</span>
+                </div>
+                <div class="card02_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="card03">
+                <div class="card03_form">
+                    <span>(Topic)</span>
+                    <img src="epsilon.jpeg" alt="epsilon">
+                </div>
+                <div class="card03_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+
+            <!-- Fifth Card -->
+            <div class="card04">
+                <div class="card04_form">
+                    <span>(Topic)</span>
+                    <img src="webinar.jpeg" alt="web">
+                </div>
+                <div class="card04_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+
+            <!-- Sixth Card -->
+            <div class="card05">
+                <div class="card05_form">
+                    <span>(Topic)</span>
+                </div>
+                <div class="card05_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+
+            <!-- Seventh Card -->
+            <div class="card06">
+                <div class="card06_form">
+                    <span>(Topic)</span>
+                </div>
+                <div class="card06_data">
+                    <div style="display: flex" class="data">
+                        <div class="text">
+                            <label class="text_m">Main Title</label>
+                            <div class="cube text_s">
+                                <label class="side front">Access the list (Topic)</label>
+                                <label class="side top">Username-id</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Acceder a la lista (Temas)">Access</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        VANTA.GLOBE({
+            el: "#vanta-bg-home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            size: 0.60,
+            backgroundColor: 0x181818,
+            speed: 2,
+        });
+
+        VANTA.DOTS({
+            el: "#vanta-bg-events",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 100.00,
+            minWidth: 100.00,
+            scale: 0.7,
+            scaleMobile: 1.00,
+            color: 0xf2f2f2,
+            color2: 0x181818,
+            backgroundColor: 0x181818,
+            speed: 2,
+        });
+        VANTA.DOTS({
+            el: "#vanta-bg-gallery",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 100.00,
+            minWidth: 100.00,
+            scale: 0.7,
+            scaleMobile: 1.00,
+            color: 0xf2f2f2,
+            color2: 0x181818,
+            backgroundColor: 0x181818,
+        });
+
+        gsap.from(".text h1", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.5 });
+        gsap.from(".text p", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.7 });
+        gsap.from(".button", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.9 });
+        gsap.from(".header nav", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 1.1 });
+        gsap.from(".header img", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 1.1 });
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".cards - container", {
+            scrollTrigger: {
+                trigger: ".cards - container",
+                scrub: true
+            },
+            x: 500,
+        });
+        gsap.to(".text2 h1", {
+            scrollTrigger: {
+                trigger: ".cards - container",
+                scrub: true
+            },
+            x: 500,
+            y: 50
+        });
+    </script>
+
+</body>
+
+</html>
