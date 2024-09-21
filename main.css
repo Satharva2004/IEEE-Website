@@ -7,7 +7,8 @@
 
         #vanta-bg-home,
         #vanta-bg-events,
-        #vanta-bg-gallery {
+        #vanta-bg-gallery,
+        #vanta-bg-contact {
             width: 100%;
             height: 100%;
             position: absolute;
@@ -847,4 +848,210 @@
                     text-decoration: none;
                     color: inherit;
                 }
+
                 
+.text5 h1 {
+    --font-color: #323232;
+    --bg-color: #fff;
+    --main-color: #404040;
+    opacity: 1;
+    font-size: 210px;
+    line-height: 100px;
+    z-index: 1;
+    color: #ffff;
+    text-align: center;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 6px 6px var(--main-color);
+}
+
+.footer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 45px;
+    color: #fff !important;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+	width: 40%;
+}
+
+
+.footer h3{
+    font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 6px 6px var(--main-color);
+        font-size: 40px;
+}
+
+.footer h3 span{
+	color:  teal;
+}
+
+/* Footer links */
+
+.footer .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .footer-name{
+  color: teal;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer-center{
+	width: 35%;
+}
+
+.footer .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer .footer-center p a{
+	color:  teal;
+	text-decoration: none;;
+}
+
+.footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer .footer-right{
+	width: 20%;
+    
+}
+
+.footer .footer-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+    
+}
+
+.footer .footer-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+    font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 6px 6px var(--main-color);
+        font-size: 40px;
+}
+
+.footer .footer-socials{
+	margin-top: 20px;
+}
+
+.footer .footer-socials a{
+	display: inline-block;
+	font-size: 35px;
+	cursor: pointer;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.footer .logo {
+    max-width: 100px;
+    height: 100px;
+    width: 100px
+
+}
+
+
+@media (max-width: 800px) {
+
+	.footer{
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-left,
+	.footer .footer-center,
+	.footer .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer .footer-center i{
+		margin-left: 0;
+	}
+
+}
