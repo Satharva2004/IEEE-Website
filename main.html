@@ -26,6 +26,7 @@
             scroll-behavior: smooth;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
@@ -44,7 +45,6 @@
             <h1>I E E E</h1>
             <p>IEEE SIES GST Student body academic year 2024</p>
         </div>
-        <!-- From Uiverse.io by andrew-demchenk0 -->
         <button class="button">
             <a href="#events">Let’s go →</a>
         </button>
@@ -56,10 +56,51 @@
                     <li><a href="#about-us">About US</a></li>
                     <li><a href="#events">Events</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
+    </div>
+    <div class="section" id="about-us">
+        <div id="vanta-bg-about"></div>
+        <div class="text3">
+            <h1>About Us</h1>
+            <p>We are the IEEE SIES GST Student Body for the academic year 2024, dedicated to fostering a collaborative
+                environment for students interested in engineering, technology, and innovation.</p>
+        </div>
+        <div class="subtext">
+            <h1 class="ms">mtts</h1>
+            <h1 class="cs">cs</h1>
+            <h1 class="wie">wie</h1>
+        </div>
+        <div class="btn111">
+            <button class="button-mtts"><a href="#events">know more →</a></button>
+
+            <button class="button-cs">
+                <a href="#events">know more →</a>
+            </button>
+            <button class="button-wie">
+                <a href="#events">know more →</a>
+            </button>
+        </div>
+        
+        <!-- <div class="carda">
+            <div data-position="top" class="carousel">
+                <span class="carousel__text">• ieee sies gst • ieee sies gst • ieee sies gst • ieee sies gst • ieee sies gst </span>
+            </div>
+
+            <span class="title">Highlight Curation</span>
+            <p class="paragraph">
+                Works autonomously through artificial intelligent and hundred of
+                micro-services
+            </p>
+            <div data-direction="right" data-position="bottom" class="carousel">
+                <span class="carousel__text">• card component • card component • card component • card component •
+                    card component • card component</span>
+            </div>
+        </div> -->
+
     </div>
 
     <div class="section" id="events">
@@ -69,9 +110,7 @@
         </div>
         <div class="text2">
             <h1>Events</h1>
-            <p>Explore our upcoming events</p>
         </div>
-        /* From Uiverse.io by 0xnihilism */
         <div class="cards-container">
             <div class="card">
                 <img src="techopedia.jpeg" alt="png">
@@ -254,7 +293,7 @@
                 </div>
             </div>
         </div>
-
+    <div class="section" id="podcast"></div>
     </div>
     <script>
 
@@ -300,7 +339,19 @@
             color2: 0x181818,
             backgroundColor: 0x181818,
         });
-
+        VANTA.DOTS({
+            el: "#vanta-bg-about",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 100.00,
+            minWidth: 100.00,
+            scale: 0.7,
+            scaleMobile: 1.00,
+            color: 0xf2f2f2,
+            color2: 0x181818,
+            backgroundColor: 0x181818,
+        });
         gsap.from(".text h1", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.5 });
         gsap.from(".text p", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.7 });
         gsap.from(".button", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.9 });

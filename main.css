@@ -13,8 +13,16 @@
             position: absolute;
             top: 0;
             left: 0;
+            z-index: -1;
         }
-
+        #vanta-bg-about {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
         .text h1 {
             --font-color: #323232;
             --bg-color: #fff;
@@ -48,7 +56,36 @@
             font-style: normal;
             opacity: 1;
         }
-
+                .text2 p {
+                    font-size: 33px;
+                    line-height: 150px;
+                    z-index: 1;
+                    color: #ffff;
+                    position: absolute;
+                    top: 38%;
+                    left: 50.5%;
+                    transform: translate(-50%, -50%);
+                    font-family: "Jersey 10", sans-serif;
+                    font-weight: 100;
+                    font-style: normal;
+                    opacity: 1;
+                }
+                .text3 p {
+                    font-size: 23px;
+                    line-height: 22px;
+                    z-index: 1;
+                    text-align: center;
+                    text-wrap:stable;
+                    color: #ffff;
+                    position: absolute;
+                    top: 38%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: "Jersey 10", sans-serif;
+                    
+                    font-style: normal;
+                    opacity: 1;
+                }
         /* From Uiverse.io by andrew-demchenk0 */
         .button {
             position: absolute;
@@ -87,12 +124,13 @@
             color: #ffff;
             z-index: 1;
             opacity: 1;
+            
         }
 
         .header nav {
             z-index: 1;
             position: absolute;
-            left: 55%;
+            left: 44.5%;
             font-family: "Jersey 10", sans-serif;
             font-style: normal;
             font-size: 25px;
@@ -121,9 +159,26 @@
             text-decoration: underline;
             color: #9b9b9b;
         }
-
+                .text3 h1 {
+                    --font-color: #323232;
+                    --bg-color: #fff;
+                    --main-color: #404040;
+                    opacity: 1;
+                    font-size: 240px;
+                    line-height: 100px;
+                    z-index: 1;
+                    color: #ffff;
+                    position: absolute;
+                    top: 2%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: "Jersey 10", sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    text-shadow: 6px 6px var(--main-color);
+        
+                }
         .text2 h1 {
-
             --font-color: #323232;
             --bg-color: #fff;
             --main-color: #404040;
@@ -133,7 +188,7 @@
             z-index: 1;
             color: #ffff;
             position: absolute;
-            top: 3%;
+            top: 2%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-family: "Jersey 10", sans-serif;
@@ -142,14 +197,15 @@
             text-shadow: 6px 6px var(--main-color);
 
         }
-
+        
         .cards-container {
             display: flex;
             justify-content: center;
+            justify-items: center;
             gap: 30px;
             /* Add some space between the cards */
             padding: 20px;
-            margin-top: 17%;
+            
             /* Add padding around the container */
             opacity: 1;
         }
@@ -175,6 +231,7 @@
         .card,
         .card1,
         .card2 {
+            margin-top: 20%;
             width: 300px;
             /* Adjust the width as needed */
             padding: 20px;
@@ -375,14 +432,14 @@
         }
 
         .card0-container::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+            width: 1px;
+            height: 9px;
             z-index: 5;
         }
 
         .card0-container::-webkit-scrollbar-thumb {
             border-radius: 20px;
-            background: #888;
+            background: #ffffff;
             z-index: 5;
         }
 
@@ -393,6 +450,7 @@
         .card04,
         .card05,
         .card06 {
+            margin-top: 22%;
             flex: 0 0 100%;
             box-sizing: border-box;
             position: relative;
@@ -561,3 +619,232 @@
             left: 3%;
             top: 3%;
         }
+                /* From Uiverse.io by MuhammadHasann */
+                /* .carda {
+                    top: 36.5%;
+                    left: 9.5%;
+                    --lime-500: #222222;
+                    --violet-700: #8a07b8;
+                    z-index: 5;
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 0.75rem;
+                    
+                    padding: 1rem;
+                    width: 75rem;
+                    height: auto;
+                    min-height: 20rem;
+                    background-color: var(--lime-500);
+        
+                    border-radius: 0.5rem;
+                }
+        
+                .carda::before {
+                    content: "";
+                    position: absolute;
+                    top: 7rem;
+                    right: 2rem;
+        
+                    width: 1.25rem;
+                    aspect-ratio: 1 / 1;
+                    background-color: var(--violet-700);
+        
+                    border-radius: 9999px;
+                }
+        
+                .carda::after {
+                    content: "";
+                    position: absolute;
+                    top: 8.75rem;
+                    right: -0.5rem;
+        
+                    width: 3rem;
+                    aspect-ratio: 1 / 1;
+                    background-color: var(--violet-700);
+        
+                    border-radius: 9999px;
+                }
+        
+                .carda .carousel {
+                    position: absolute;
+                    left: 0;
+        
+                    animation: carousel 15s linear var(--carousel_direction, normal) infinite;
+                }
+        
+                .carda .carousel[data-direction="right"] {
+                    --carousel_direction: reverse;
+                }
+        
+                .carda .carousel[data-position="top"] {
+                    top: 0.75rem;
+                }
+        
+                .carda .carousel[data-position="bottom"] {
+                    bottom: 0.75rem;
+                }
+        
+                .carda .carousel .carousel__text {
+                    font-size: 1rem;
+                    color: rgb(255, 255, 255);
+                    text-wrap: nowrap;
+                }
+        
+                @keyframes carousel {
+                    to {
+                        transform: translate(-50%);
+                    }
+                }
+        
+
+        
+                .carda .image svg {
+                    width: 1.5rem;
+                    fill: white;
+                }
+        
+                .carda .title {
+                    position: relative;
+                    z-index: 10;
+        
+                    font-size: 1rem;
+                    color: black;
+                    font-weight: bold;
+                }
+        
+                .carda .paragraph {
+                    position: relative;
+                    z-index: 10;
+        
+                    padding-right: 0.25rem;
+        
+                    font-size: 0.75rem;
+                    color: black;
+                } */
+
+        .subtext h1{
+            --font-color: #323232;
+                --bg-color: #fff;
+                --main-color: #404040;
+                font-size: 180px;
+                line-height: 100px;
+                z-index: 1;
+                color: #dbc4de;
+                position: absolute;
+                top: 18%;
+                left: 22%;
+                transform: translate(-50%, -50%);
+                font-family: "Jersey 10", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                text-shadow: 6px 6px var(--main-color);
+                opacity: 1;
+                margin-top: 20%;
+        }
+        .ms {
+            margin-left: 0%;
+        }
+        .cs {
+            margin-left: 28%;
+        }
+                .wie {
+                    margin-left: 55%;
+                }
+                .btn111 a{
+                    text-decoration: none;
+                        color: inherit;
+                }
+                .button-cs {
+                    position: absolute;
+                    top: 73%;
+                    left: 16%;
+                    z-index: 5;
+                    --font-color: #323232;
+                    --bg-color: #fff;
+                    --main-color: #404040;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 2px solid var(--main-color);
+                    background-color: var(--bg-color);
+                    box-shadow: 4px 4px var(--main-color);
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: var(--font-color);
+                    cursor: pointer;
+                    opacity: 1;
+                }
+        
+                .button-cs:active {
+                    box-shadow: 0px 0px var(--main-color);
+                    transform: translate(3px, 3px);
+                }
+        
+                .button-cs a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+                .button-mtts {
+                    position: absolute;
+                    top: 73%;
+                    left: 45%;
+                    z-index: 1;
+                    --font-color: #323232;
+                    --bg-color: #fff;
+                    --main-color: #404040;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 2px solid var(--main-color);
+                    background-color: var(--bg-color);
+                    box-shadow: 4px 4px var(--main-color);
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: var(--font-color);
+                    cursor: pointer;
+                    opacity: 1;
+                }
+        
+                .button-mtts:active {
+                    box-shadow: 0px 0px var(--main-color);
+                    transform: translate(3px, 3px);
+                }
+        
+                .button-mtts a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+                .button-wie {
+                    position: absolute;
+                    top: 73%;
+                    left: 72%;
+                    z-index: 1;
+                    --font-color: #323232;
+                    --bg-color: #fff;
+                    --main-color: #404040;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 2px solid var(--main-color);
+                    background-color: var(--bg-color);
+                    box-shadow: 4px 4px var(--main-color);
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: var(--font-color);
+                    cursor: pointer;
+                    opacity: 1;
+                }
+        
+                .button-wie:active {
+                    box-shadow: 0px 0px var(--main-color);
+                    transform: translate(3px, 3px);
+                }
+        
+                .button-wie a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+                
