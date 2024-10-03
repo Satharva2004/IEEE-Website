@@ -71,6 +71,20 @@
                     font-style: normal;
                     opacity: 1;
                 }
+                                .text4 p {
+                                    font-size: 33px;
+                                    line-height: 150px;
+                                    z-index: 1;
+                                    color: #ffff;
+                                    position: absolute;
+                                    top: 38%;
+                                    left: 50.5%;
+                                    transform: translate(-50%, -50%);
+                                    font-family: "Jersey 10", sans-serif;
+                                    font-weight: 100;
+                                    font-style: normal;
+                                    opacity: 1;
+                                }
                 .text3 p {
                     font-size: 23px;
                     line-height: 22px;
@@ -79,7 +93,7 @@
                     text-wrap:stable;
                     color: #ffff;
                     position: absolute;
-                    top: 38%;
+                    top: 45%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     font-family: "Jersey 10", sans-serif;
@@ -87,6 +101,7 @@
                     font-style: normal;
                     opacity: 1;
                 }
+                                
         /* From Uiverse.io by andrew-demchenk0 */
         .button {
             position: absolute;
@@ -118,48 +133,69 @@
             text-decoration: none;
             color: inherit;
         }
-
-        header * {
-            display: inline;
-            top: 5%;
-            color: #ffff;
-            z-index: 1;
-            opacity: 1;
-            
-        }
-
-        .header nav {
-            z-index: 1;
-            position: absolute;
-            left: 44.5%;
-            font-family: "Jersey 10", sans-serif;
-            font-style: normal;
-            font-size: 25px;
-            z-index: 1;
-        }
-
-        .header li {
-            margin: 30px;
-        }
-
-        .header a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 26px;
-            display: inline-block;
-            position: relative;
-            transition: transform 0.2s ease;
-        }
-
-        .header a:active {
-            transform: translateX(4px);
-            /* Horizontal push effect */
-        }
-
-        .header a:hover {
-            text-decoration: underline;
-            color: #9b9b9b;
-        }
+                .header {
+                    position: fixed;
+                        /* Fixed to make it stay at the top */
+                        top: 0;
+                        left: 0;
+                        /* Aligns the header to the left of the page */
+                        width: calc(100% - 17px);
+                        /* Subtracts a bit from the width to avoid overlap with the scrollbar */
+                        background-color: rgba(255, 255, 255, 0.1);
+                        /* Transparent white background */
+                        backdrop-filter: blur(10px);
+                        /* The blur effect */
+                        -webkit-backdrop-filter: blur(10px);
+                        /* For Safari */
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        /* Optional: shadow for better visual effect */
+                        z-index: 1000;
+                        padding: 42px 0;
+                        /* Add some padding for spacing */
+                }
+        
+                .header nav {
+                    z-index: 1001;
+                    position: fixed;
+                    /* Fixed for the nav as well */
+                    top: 0;
+                    left: 44.5%;
+                    /* Keep your alignment */
+                    font-family: "Jersey 10", sans-serif;
+                    font-style: normal;
+                    font-size: 25px;
+                }
+        
+                .header ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-around;
+                    /* Adjust based on spacing needs */
+                }
+        
+                .header li {
+                    margin: 30px;
+                }
+        
+                .header a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 26px;
+                    display: inline-block;
+                    position: relative;
+                    transition: transform 0.2s ease;
+                }
+        
+                .header a:active {
+                    transform: translateX(4px);
+                }
+        
+                .header a:hover {
+                    text-decoration: underline;
+                    color: #a241d6;
+                }
                 .text3 h1 {
                     --font-color: #323232;
                     --bg-color: #fff;
@@ -170,15 +206,32 @@
                     z-index: 1;
                     color: #ffff;
                     position: absolute;
-                    top: 2%;
                     left: 50%;
+                    top: 10%;
                     transform: translate(-50%, -50%);
                     font-family: "Jersey 10", sans-serif;
                     font-weight: 600;
                     font-style: normal;
                     text-shadow: 6px 6px var(--main-color);
-        
                 }
+                                .text4 h1 {
+                                    --font-color: #323232;
+                                    --bg-color: #fff;
+                                    --main-color: #404040;
+                                    opacity: 1;
+                                    font-size: 240px;
+                                    line-height: 100px;
+                                    z-index: 1;
+                                    color: #ffff;
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-family: "Jersey 10", sans-serif;
+                                    font-weight: 600;
+                                    font-style: normal;
+                                    top: 10%;
+                                    text-shadow: 6px 6px var(--main-color);
+                                }
         .text2 h1 {
             --font-color: #323232;
             --bg-color: #fff;
@@ -189,8 +242,9 @@
             z-index: 1;
             color: #ffff;
             position: absolute;
-            top: 2%;
+            top: 10%;
             left: 50%;
+            
             transform: translate(-50%, -50%);
             font-family: "Jersey 10", sans-serif;
             font-weight: 600;
@@ -205,7 +259,7 @@
             justify-items: center;
             gap: 30px;
             /* Add some space between the cards */
-            padding: 20px;
+            padding: 90px;
             
             /* Add padding around the container */
             opacity: 1;
@@ -418,7 +472,7 @@
             gap: 20px;
             scroll-padding-top: 24px;
             border-radius: 8px;
-            margin-top: 20%;
+            
             margin-left: 2%;
             display: flex;
             overflow-x: scroll;
@@ -616,7 +670,7 @@
         .header img {
             width: 5.5%;
             z-index: 1;
-            position: absolute;
+            position: fixed;
             left: 3%;
             top: 3%;
         }
@@ -735,7 +789,7 @@
                 z-index: 1;
                 color: #dbc4de;
                 position: absolute;
-                top: 18%;
+                top: 20%;
                 left: 22%;
                 transform: translate(-50%, -50%);
                 font-family: "Jersey 10", sans-serif;
@@ -1053,5 +1107,20 @@
 	.footer .footer-center i{
 		margin-left: 0;
 	}
-
+}
+@media only screen and (max-width: 480px) {
+        .text p {
+            font-size: 40px;
+            line-height: 150px;
+            z-index: 1;
+            color: #ffff;
+            position: absolute;
+            top: 57%;
+            left: 28.5%;
+            transform: translate(-50%, -50%);
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            opacity: 1;
+        }
 }

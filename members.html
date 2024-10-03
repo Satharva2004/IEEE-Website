@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="members.css">
+    <title>IEEE SIES GST</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            width: 100%;
+            height: 100%;
+            background-color: #181818;
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="section" id="memebers">
+        <div id="vanta-bg-memebers">
+        </div>
+    </div>
+</body>
+<script>
+    VANTA.DOTS({
+        el: "#vanta-bg-memebers",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 100.00,
+        minWidth: 100.00,
+        scale: 0.7,
+        scaleMobile: 1.00,
+        color: 0xf2f2f2,
+        color2: 0x181818,
+        backgroundColor: 0x181818,
+    });
+</script>
+</html>
